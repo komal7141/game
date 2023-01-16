@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #82AAE3;
+    overflow: hidden;
+}
+.gamecontainer{
+    background-image: url(back.webp);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.yodha{
+    background-image: url(yodha.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 199px;
+    height: 170px;
+    position: absolute;
+    bottom: 0;
+   
+}
+.obstacle{
+    width: 200px;
+    height: 120px;
+    background-image: url(dragon.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+}
+.animateyodha{
+    animation: yodha 0.6s linear;
+}
+.obstacleani{
+    animation: obstacleani 5s linear infinite;
+}
+ .gameOver{
+    color: aliceblue;
+    position: relative;
+    top: 63px;
+    font-size: 43px;
+    font-family: sans-serif ;
+    text-align: center;
+    
+} 
+#scorecount{
+    position: absolute;
+    font-weight: bold;
+    right: 45px ;
+    top: 31px;
+    border: 2px solid black ;
+    padding: 10px;
+    font-family: sans-serif;
+    width: 112px;
+    color: wheat;
+}
+@keyframes yodha {
+    0%{
+          bottom: 0;
+    }
+    50%{
+       bottom: 422px; 
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+ @keyframes obstacleani {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    } 
+}
